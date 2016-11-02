@@ -43,5 +43,6 @@ class ActorsController < ApplicationController
     @actor = Actor.find(params[:id])
 
     @actor.destroy
+    redirect_to("http://localhost:3000/actors")
   end
 end
